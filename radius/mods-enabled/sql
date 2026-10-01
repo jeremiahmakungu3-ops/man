@@ -1,0 +1,25 @@
+sql {
+    driver = "rlm_sql_postgresql"
+    dialect = "postgresql"
+
+    server = "$ENV{DATABASE_HOST}"
+    port = 5432
+    login = "$ENV{DATABASE_USER}"
+    password = "$ENV{DATABASE_PASSWORD}"
+    radius_db = "$ENV{DATABASE_NAME}"
+
+    read_clients = yes
+    client_table = "nas"
+
+    # Connection pool configuration
+    pool {
+        start = 5
+        min = 4
+        max = 32
+        spare = 3
+        uses = 0
+        retry_delay = 30
+        lifetime = 0
+        idle_timeout = 60
+    }
+}

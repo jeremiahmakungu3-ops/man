@@ -1,0 +1,6 @@
+{
+  "name": "XCLOUD - Hotspot Billing & ISP Automation",
+  "description": "Production-grade cloud-based hotspot, PPPoE billing, MikroTik & TP-Link Omada automation, FreeRADIUS, and Tanzanian Mobile Money platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
